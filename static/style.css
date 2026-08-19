@@ -1,0 +1,24 @@
+body{
+
+    text-align:center;
+    font-family:Arial;
+    background:#111;
+    color:white;
+
+}
+
+
+h1{
+
+    margin-top:30px;
+
+}
+
+
+.camera img{
+
+    width:720px;
+    border-radius:20px;
+    margin-top:30px;
+
+}
