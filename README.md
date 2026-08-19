@@ -39,71 +39,35 @@ RPSgame/
 ├── .gitignore
 └── README.md
 
-## Installation
+## Setup and Usage
 
-Clone the repository:
+### 1. Clone the Repository
 
 git clone https://github.com/Mrudul-P-Manesh/RPSgame.git
 cd RPSgame
 
-Create and activate a virtual environment:
+### 2. Create a Virtual Environment
 
 python3 -m venv venv
 source venv/bin/activate
 
-Install the required dependencies:
+### 3. Install Dependencies
 
 pip install -r requirements.txt
 
-## Running the Application
-
-Start the Flask application:
+### 4. Run the Application
 
 python3 app.py
 
-Open the application in a browser at:
+The application will be available at:
 
 http://127.0.0.1:5000
 
-## Application Workflow
+## Model
 
-Camera Input
-      |
-      v
-Image Processing
-      |
-      v
-TensorFlow/Keras Model
-      |
-      v
-Gesture Classification
-      |
-      v
-Rock / Paper / Scissors
-      |
-      v
-Game Logic
-      |
-      v
-Game Result
+The application uses a trained Keras model (`keras_model.h5`) to classify Rock, Paper, and Scissors hand gestures.
 
-## Machine Learning Model
-
-The trained model is stored in keras_model.h5.
-
-The class labels used by the model are stored in labels.txt.
-
-The model processes the captured input and predicts the corresponding hand gesture, which is then passed to the game logic to determine the result.
-
-## Future Improvements
-
-- Improve gesture classification accuracy
-- Add score tracking
-- Implement multiplayer functionality
-- Add difficulty levels
-- Optimize model inference performance
-- Improve the user interface
-- Deploy the application for public access
+Class labels are defined in `labels.txt`. The Flask application processes the model predictions and integrates them with the game logic to determine the outcome.
 
 ## Author
 
